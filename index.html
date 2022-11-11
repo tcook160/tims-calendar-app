@@ -18,21 +18,119 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
-  <body>
+  <body onload = "JavaScript:AutoRefresh(50000);">
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
+      <p class="lead" id="currentDate"></p>
     </header>
     <div class="container">
-      <!-- Timeblocks go here -->
+      <table style="width: 100%">
+        <tr>
+          <th style="height: 100px" >9AM</th>
+          <td> 
+            <input name="9AM" id="9AM" style="width: 100%" bgcolor="gray"/>
+          </td>
+          <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save9amEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">10AM</th>
+          <td> 
+            <input name="10AM" id="10AM" style="width: 100%"/>
+          </td>
+          <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save10amEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">11AM</th>
+          <td> 
+            <input name="11AM" id="11AM" style="width: 100%"/>
+          </td>          <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save11amEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">12PM</th>
+          <td> 
+            <input name="12PM" id="12PM" style="width: 100%"/>
+          </td>          
+          <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save12pmEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">1PM</th>
+          <td> 
+            <input name="1PM" id="1PM" style="width: 100%"/>
+          </td>         
+           <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save1pmEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">2PM</th>
+          <td> 
+            <input name="2PM" id="2PM" style="width: 100%"/>
+          </td>         
+           <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save2pmEvent"></img>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">3PM</th>
+          <td> 
+            <input name="3PM" id="3PM" style="width: 100%"/>
+          </td>         
+           <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save3pmEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">4PM</th>
+          <td> 
+            <input name="4PM" id="4PM" style="width: 100%"/>
+          </td>         
+           <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save4pmEvent"/>
+          </td>
+        </tr>
+        <tr>
+          <th style="height: 100px">5PM</th>
+          <td> 
+            <input name="5PM" id="5PM" style="width: 100%"/>
+          </td>         
+           <td>
+            <input type="image" src="./assets/images/save_button.png" alt="" border=3 height=90
+            width=150 id="save5pmEvent"/>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/css/js/calendar.js"></script>
+    <script type = "text/JavaScript">
+      <!--
+         function AutoRefresh( t ) {
+            setTimeout("location.reload(true);", t);
+         }
+      //-->
+   </script>
   </body>
 </html>
