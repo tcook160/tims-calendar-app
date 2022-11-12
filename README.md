@@ -3,7 +3,7 @@
 ## Description of Application
 
 A simple calendar application that allows a user to save events for each hour of the day.
-![alt text]([http://url/to/img.png](https://user-images.githubusercontent.com/112792888/201424946-2d1392a0-d2f9-4e62-9a7f-323b6f0837da.png))
+![alt text](https://user-images.githubusercontent.com/112792888/201424946-2d1392a0-d2f9-4e62-9a7f-323b6f0837da.png)
 
 ## User Story
 
